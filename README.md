@@ -1,0 +1,1 @@
+Some assignments and other trifles for Coursera specialization Data Analysis and Interpretation.

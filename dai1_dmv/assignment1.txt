@@ -1,0 +1,85 @@
+I chose NESARC dataset to explore. The main reasons were:
+- the size of the dataset (over 40K rows, which makes it more interesting to operate programmatically);
+- high detalization of parameters, which provides great opportunities for asking questions.
+
+I am going to focus on specific phobias (SP), particularly on animal phobia (AP). This kind of phobia appears to be rather widely spread and, according to some studies (see below) has rather specific distinctions from other kinds of SP, such as fear of heights, water, dentists, etc. So, it might be a good reason to single out just one phobia in order to narrow down my analysis. The variable is S8Q1A1 (EVER HAD FEAR/AVOIDANCE OF INSECTS, SNAKES, BIRDS, OTHER ANIMALS).
+My original question is if there is any particular association between this AP and the origin of a person (I would causiously suggest that different origins probably mean different cultural backgrounds). The variable is S1Q1E (ORIGIN OR DESCENT).
+Next I would like to have a look at whether there is any association between having AP and the self-perception of health. The variable is S1Q16 (SELF-PERCEIVED CURRENT HEALTH).
+
+So here are the basic questions:
+- Is there any associasion between animal phobia and the origin?
+- Is there any association between animal phobia and self-perceived current health description?
+
+There is one more additional question (just in case I have more time for that). After taking a look at the national dimension of AP, it might be interesting to also consider possible cultural/perception changes over time and check out the percentage of people with AP across different age groups.
+
+Based on literature review (below), my hypothesis is:
+- AP shows some association with national / cultural background or context and may be associated with the perception of health condition.
+
+Literature review
+AP is discussed in a number of contexts.
+AP in course of other SPs or vs. other SPs, anxiety and various disorders/mental conditions.
+
+[1] Vladeta Ajdacic-Gross, Stephanie Rodgers, Mario Müller, Michael P. Hengartner, Aleksandra Aleksandrowicz, Wolfram Kawohl, Karsten Heekeren, Wulf Rössler, Jules Angst, Enrique Castelao, Caroline Vandeleur, Martin Preisig
+Pure animal phobia is more specific than other specific phobias: epidemiological evidence from the Zurich Study, the ZInEP and the PsyCoLaus
+European Archives of Psychiatry and Clinical Neuroscience, September 2016, Volume 266, Issue 6, pp 567–577
+https://link.springer.com/article/10.1007/s00406-016-0687-4
+This study states that pure animal phobia is principally different from other kinds of SP:
+"Pure animal phobia and mixed animal/other specific phobias consistently displayed a low age at onset of first symptoms (8–12 years) and clear preponderance of females (OR > 3). Meanwhile, other specific phobias started up to 10 years later and displayed almost a balanced sex ratio. Pure animal phobia showed no associations with any included risk factors and comorbid disorders, in contrast to numerous associations found in the mixed subtype and in other specific phobias. Across the whole range of epidemiological parameters examined in three different samples, pure animal phobia seems to represent a different entity compared to other specific phobias. The etiopathogenetic mechanisms and risk factors associated with pure animal phobias appear less clear than ever".
+Based on this, I should probably also take into account the distinction between 'pure' (not combined with other SPs) and 'mixed' (goes in combination with other SPs) animal phobia.
+So I may need to see the proportion of those who have had only AP symptoms (variable S8Q1A1, EVER HAD FEAR/AVOIDANCE OF INSECTS, SNAKES, BIRDS, OTHER ANIMALS) and those combining AP with other SP episodes.
+
+[2] Kevin Hilbert, Ricard Evens, Nina Isabel Maslowski, Hans-Ulrich Wittchen, Ulrike Lueken
+Neurostructural correlates of two subtypes of specific phobia: A voxel-based morphometry study
+Psychiatry Research: Neuroimaging
+Volume 231, Issue 2, 28 February 2015, Pages 168-175
+https://www.sciencedirect.com/science/article/pii/S0925492714003308
+Abstract: "The animal and blood-injection-injury (BII) subtypes of specific phobia are both characterized by subjective fear but distinct autonomic reactions to threat. Previous functional neuroimaging studies have related these characteristic responses to shared and non-shared neural underpinnings. However, no comparative structural data are available. This study aims to fill this gap by comparing the two subtypes and also comparing them with a non-phobic control group".
+This study shows more complicated dependencies in the comparative analysis of SPs. To be taken into consideration while comparing. Particularly variable S8Q1A8 (EVER HAD FEAR/AVOIDANCE OF SEEING BLOOD/GETTING AN INJECTION) may be of interest.
+
+[3] K. J. Wardenaar, C. C. W. Lim, A. O. Al-Hamzawi, J. Alonso et al. 
+The cross-national epidemiology of specific phobia in the World Mental Health Surveys
+Psychological Medicine, Volume 47, Issue 10 July 2017 , pp. 1744-1760
+https://www.cambridge.org/core/journals/psychological-medicine/article/crossnational-epidemiology-of-specific-phobia-in-the-world-mental-health-surveys/A0EDD4B22E19CDB63269D7A34F2C21AA
+Results: "The cross-national lifetime and 12-month prevalence rates of specific phobia were, respectively, 7.4% and 5.5%, being higher in females (9.8 and 7.7%) than in males (4.9% and 3.3%) and higher in high- and higher-middle-income countries than in low-/lower-middle-income countries. The median age of onset was young (8 years). Of the 12-month patients, 18.7% reported severe role impairment (13.3–21.9% across income groups) and 23.1% reported any treatment (9.6–30.1% across income groups). Lifetime co-morbidity was observed in 60.5% of those with lifetime specific phobia, with the onset of specific phobia preceding the other disorder in most cases (72.6%). Interestingly, rates of impairment, treatment use and co-morbidity increased with the number of fear subtypes".
+This study indicates some association with age and sex. It also states associations with other disorders. This means that variables, such as sex and probably age as well should be taken into consideration. Luckily, the dataset provides SEX and AGE parameters.
+
+AP in the context of nationality
+
+[4] Cultural Clinical Psychology Study Group, W.A. Arrindell, Martin Eisemann et al.
+Phobic anxiety in 11 nations: Part I: Dimensional constancy of the five-factor model
+Behaviour Research and Therapy, Volume 41, Issue 4, April 2003, Pages 461-479
+https://www.sciencedirect.com/science/article/abs/pii/S0005796702000475
+(and Part 2 here https://www.sciencedirect.com/science/article/pii/S0191886903004057)
+Abstract: "The Fear Survey Schedule-III (FSS-III) was administered to a total of 5491 students in Australia, East Germany, Great Britain, Greece, Guatemala, Hungary, Italy, Japan, Spain, Sweden, and Venezuela, and submitted to the multiple group method of confirmatory analysis (MGM) in order to determine the cross-national dimensional constancy of the five-factor model of self-assessed fears originally established in Dutch, British, and Canadian samples. The model comprises fears of bodily injury–illness–death, agoraphobic fears, social fears, fears of sexual and aggressive scenes, and harmless animals fears. Close correspondence between the factors was demonstrated across national samples. In each country, the corresponding scales were internally consistent, were intercorrelated at magnitudes comparable to those yielded in the original samples, and yielded (in 93% of the total number of 55 comparisons) sex differences in line with the usual finding (higher scores for females). In each country, the relatively largest sex differences were obtained on harmless animals fears. The organization of self-assessed fears is sufficiently similar across nations to warrant the use of the same weight matrix (scoring key) for the FSS-III in the different countries and to make cross-national comparisons feasible. This opens the way to further studies that attempt to predict (on an a priori basis) cross-national variations in fear levels with dimensions of national cultures."
+And quoting the abstract for the other part: "Hofstede’s dimensions of national cultures termed Masculinity–Femininity (MAS) and Uncertainty Avoidance (UAI) (Hofstede, 2001) are proposed to be of relevance for understanding national-level differences in self-assessed fears. The potential predictive role of national MAS was based on the classical work of Fodor (Fodor, 1974). Following Fodor, it was predicted that masculine (or tough) societies in which clearer differentiations are made between gender roles (high MAS) would report higher national levels of fears than feminine (or soft/modest) societies in which such differentiations are made to a clearly lesser extent (low MAS). In addition, it was anticipated that nervous-stressful-emotionally-expressive nations (high UAI) would report higher national levels of fears than calm-happy and low-emotional countries (low UAI), and that countries high on both MAS and UAI would report the highest national levels of fears."
+So, to summarize:
+- National / cultural differences show up when it comes to animal fears (particularly harmless)
+- Such fears are more common for 'masculine' cultures with more rigid gender roles; and also more typical for 'nervous/emotionaly expressive' countries.
+- So there is some cultural association with such animal fears.
+And here is where I am going to rely on S1Q1E (ORIGIN OR DESCENT) parameter.
+
+[5] Eva Landová1, Natavan Bakhshaliyeva et al.
+Association Between Fear and Beauty Evaluation of Snakes: Cross-Cultural Findings
+Front. Psychol., 16 March 2018
+https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00333/full
+The study states that the fear of snakes has evolutionary reasons and is particularly connected to geogrphical and natural conditions in which a country's culture was formed. Well, just another case to show that researchers do establish some cultural association with fears (and ultimately phobias).
+
+SPs (including AP) and physical conditions
+
+[6] Cornelia Witthauer, Vladeta Ajdacic-Gross, et al.
+Associations of specific phobia and its subtypes with physical diseases: an adult community study
+BMC Psychiatry, 2016
+https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-016-0863-0
+Results: "Specific phobia was associated with cardiac diseases, gastrointestinal diseases, respiratory diseases, arthritic conditions, migraine, and thyroid diseases (odds ratios between 1.49 and 2.53). Among the subtypes, different patterns of associations with physical diseases were established".
+
+[7] Ella L.Oar, Lara J.Farrell et al.
+Blood-Injection-Injury Phobia and Dog Phobia in Youth: Psychological Characteristics and Associated Features in a Clinical Sample
+Behavior Therapy, Volume 47, Issue 3, May 2016, Pages 312-324
+https://www.sciencedirect.com/science/article/abs/pii/S0005789416000058
+Abstract: "Blood-Injection-Injury (BII) phobia is a particularly debilitating condition that has been largely ignored in the child literature. The present study examined the clinical phenomenology of BII phobia in 27 youths, relative to 25 youths with dog phobia—one of the most common and well-studied phobia subtypes in youth. Children were compared on measures of phobia severity, functional impairment, comorbidity, threat appraisals (danger expectancies and coping), focus of fear, and physiological responding, as well as vulnerability factors including disgust sensitivity and family history. Children and adolescents with BII phobia had greater diagnostic severity. In addition, they were more likely to have a comorbid diagnosis of a physical health condition, to report more exaggerated danger expectancies, and to report fears that focused more on physical symptoms (e.g., faintness and nausea) in comparison to youth with dog phobia. The present study advances knowledge relating to this poorly understood condition in youth".
+Here I can note that Blood-Injection-Injury phobia is often mentioned (and explored) in combination with animal phobia (like here and in [2] for instance, but I have come across other cases as well).
+
+To summarize:
+- SP (AP among them) may be an indication to some physical conditions.
+- Which makes me think there might be some reflection in self-perseption.
+- Unfortunately, I failed to find any studies of association between SP and hypochondria, which would be more appropriate for my intention to check exactly subjective perception of health.
