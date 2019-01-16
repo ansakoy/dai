@@ -85,10 +85,10 @@ def main():
 
     # Get frequencies and percentages for origins distribution
 
-    origins_freq = data[ORIGIN_MAP[CODE]].value_counts(sort=False)
-    origins_percent = data[ORIGIN_MAP[CODE]].value_counts(sort=False, normalize=True)
-    # origins_freq = data[ORIGIN_MAP[CODE]].value_counts()
-    # origins_percent = data[ORIGIN_MAP[CODE]].value_counts(normalize=True)
+    # origins_freq = data[ORIGIN_MAP[CODE]].value_counts(sort=False, dropna=False)
+    # origins_percent = data[ORIGIN_MAP[CODE]].value_counts(sort=False, dropna=False, normalize=True)
+    origins_freq = data[ORIGIN_MAP[CODE]].value_counts(dropna=False)
+    origins_percent = data[ORIGIN_MAP[CODE]].value_counts(dropna=False, normalize=True)
     label_print(origins_freq, origins_percent, ORIGIN_MAP)
 
     # Get the number of distinct categories in origin
@@ -96,8 +96,8 @@ def main():
     print('num distinct origins:', len(unique_origins))
 
     # Get frequencies and percentages for perceived health distribution
-    health_freq = data[HEALTH_MAP[CODE]].value_counts(sort=False)
-    health_percent = data[HEALTH_MAP[CODE]].value_counts(sort=False, normalize=True)
+    health_freq = data[HEALTH_MAP[CODE]].value_counts(sort=False, dropna=False)
+    health_percent = data[HEALTH_MAP[CODE]].value_counts(sort=False, dropna=False, normalize=True)
     label_print(health_freq, health_percent, HEALTH_MAP)
 
     # Get frequencies and percentages for age distribution
@@ -106,16 +106,25 @@ def main():
     # age_percent = data[AGE_MAP[CODE]].value_counts(sort=False, dropna=False, normalize=True)
     # label_print(age_freq, age_percent, HEALTH_MAP, rename=False, ind_sort=True)
 
-    # Making a subset of origins by animal phobia
+    # Making a subset of origins by animal phobia and health perception
     condition_ap = data[ANIMALS_MAP[CODE]] == 1
     condition_health = data[HEALTH_MAP[CODE]] == 5
     condition_origin = data[ORIGIN_MAP[CODE]].isin([1, 19, 15, 18, 27, 29, 36, 35, 39, 3])
     raw_subset = data[(condition_ap & condition_health & condition_origin)]
     subset = raw_subset.copy()
-    print('Subset: top origins + poor perceived health + have AP')
+    print('\nSubset: top origins + poor perceived health + have AP')
     origins_ap_freq = subset[ORIGIN_MAP[CODE]].value_counts(sort=False)
     origins_ap_percent = subset[ORIGIN_MAP[CODE]].value_counts(sort=False, normalize=True)
     label_print(origins_ap_freq, origins_ap_percent, ORIGIN_MAP)
+
+
+    # Making a subset of perceiced health by animal phobia and health perception
+    raw_subset = data[(condition_ap)]
+    subset_health_ap = raw_subset.copy()
+    print('\nSubset: perceived health + have AP')
+    health_ap_freq = subset_health_ap[HEALTH_MAP[CODE]].value_counts(sort=True, dropna=False)
+    health_ap_percent = subset_health_ap[HEALTH_MAP[CODE]].value_counts(sort=True, dropna=False, normalize=True)
+    label_print(health_ap_freq, health_ap_percent, HEALTH_MAP)
 
 
 if __name__ == '__main__':
