@@ -1,3 +1,8 @@
+'''
+Mapping coded values and their meanings based on the dataset codebook
+'''
+
+
 ANIMALS_VALUES = {
     1: 'Yes',
     2: 'No',

@@ -1,3 +1,7 @@
+'''
+Some test code to test the course material
+'''
+
 import pandas
 # import numpy
 import time

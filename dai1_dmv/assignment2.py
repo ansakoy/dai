@@ -96,8 +96,8 @@ def main():
     print('num distinct origins:', len(unique_origins))
 
     # Get frequencies and percentages for perceived health distribution
-    health_freq = data[HEALTH_MAP[CODE]].value_counts(sort=False, dropna=False)
-    health_percent = data[HEALTH_MAP[CODE]].value_counts(sort=False, dropna=False, normalize=True)
+    health_freq = data[HEALTH_MAP[CODE]].value_counts(sort=True, dropna=False)
+    health_percent = data[HEALTH_MAP[CODE]].value_counts(sort=True, dropna=False, normalize=True)
     label_print(health_freq, health_percent, HEALTH_MAP)
 
     # Get frequencies and percentages for age distribution
@@ -118,7 +118,7 @@ def main():
     label_print(origins_ap_freq, origins_ap_percent, ORIGIN_MAP)
 
 
-    # Making a subset of perceiced health by animal phobia and health perception
+    # Making a subset by animal phobia and health perception
     raw_subset = data[(condition_ap)]
     subset_health_ap = raw_subset.copy()
     print('\nSubset: perceived health + have AP')
