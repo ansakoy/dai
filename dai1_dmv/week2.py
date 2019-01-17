@@ -1,5 +1,5 @@
 '''
-Some test code to test the course material
+Some code to test the course material
 '''
 
 import pandas
