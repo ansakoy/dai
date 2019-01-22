@@ -91,11 +91,10 @@ def main():
     print(pd.concat(dict(Frequencies=subset[APPUREMIXED].value_counts(sort=True, dropna=False),
                          Percentages=subset[APPUREMIXED].value_counts(sort=True, dropna=False, normalize=True)), axis=1))
 
-    # Replacing all values >1 with zero
+    # Replacing all values >1 with zero to get clear binary picture
     print('\nValues distribution for modified APPUREMIXED (1 - Pure, 0 - Not Pure, i.e. mixed)')
     condition_for_replace = subset[APPUREMIXED] > 1
     subset.loc[condition_for_replace, APPUREMIXED] = 0
-    print('\nValues distribution for new APPUREMIXED variable')
     print(pd.concat(dict(Frequencies=subset[APPUREMIXED].value_counts(sort=True, dropna=False),
                          Percentages=subset[APPUREMIXED].value_counts(sort=True, dropna=False, normalize=True)), axis=1))
 
