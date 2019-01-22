@@ -82,3 +82,71 @@ ORIGINS_VALUES = {
     98: "Other",
     99: "Unknown"
 }
+
+
+# Other Specific Phobias
+HEIGHTS_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
+
+THUNDER_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
+
+WATER_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
+
+FLYING_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
+
+CROWD_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
+
+CLOSED_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
+
+BLOOD_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
+
+TRAVELING_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
+
+DENTIST_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
+
+HOSPITAL_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
+
+OUTSIDE_VALUES = {
+    1: 'Yes',
+    2: 'No',
+    9: 'Unknown'
+}
