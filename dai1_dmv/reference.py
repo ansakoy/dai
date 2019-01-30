@@ -83,6 +83,53 @@ ORIGINS_VALUES = {
     99: "Unknown"
 }
 
+REGIONS = {
+    1: 'Africa',
+     3: '[Native Americans]',
+     8: 'Latin America',
+     11: 'Latin America',
+     14: 'Central Europe',
+     15: 'Western Europe',
+     18: 'Western Europe',
+     19: 'Central Europe',
+     27: 'Western Europe',
+     29: 'Southern Europe',
+     35: 'Latin America',
+     36: 'Latin America',
+     37: 'Northern Europe',
+     38: 'Central Europe',
+     39: 'Latin America',
+     40: 'Eastern Europe',
+     41: 'Western Europe',
+     43: 'Latin America',
+     44: 'Southern Europe',
+     45: 'Northern Europe'
+}
+
+
+REGIONS_ORIGINS = {
+    "African American (Black, Negro, or Afro-American)": "Africa",
+    "American Indian (Native American)": "[Native Americans]",
+    "South American (e.g., Brazilian, Chilean, Columbian)": "Latin America",
+    "Central American (e.g., Nicaraguan, Guatemalan)": "Latin America",
+    "Puerto Rican": "Latin America",
+    "Dutch": "Central Europe",
+    "French": "Western Europe",
+    "Spanish (Spain) , Portugese": "Southern Europe",
+    "Italian": "Southern Europe",
+    "Irish": "Western Europe",
+    "Scottish": "Western Europe",
+    "English": "Western Europe",
+    "Cuban": "Latin America",
+    "Mexican-American": "Latin America",
+    "Norwegian": "Northern Europe",
+    "Mexican": "Latin America",
+    "German": "Central Europe",
+    "Swedish": "Northern Europe",
+    "Polish": "Central Europe",
+    "Russian": "Eastern Europe"
+}
+
 
 # Other Specific Phobias
 HEIGHTS_VALUES = {

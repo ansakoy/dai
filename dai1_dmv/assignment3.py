@@ -56,7 +56,7 @@ def main():
     data[HEALTH_MAP[CODE]] = data[HEALTH_MAP[CODE]].replace(9, np.nan)
 
     # Get percentages / frequencies of AP by origin
-    
+
     # Get frequencies by origin
     # origins = data[ORIGIN_MAP[CODE]].value_counts(sort=False, dropna=False)  # With NaN
     origins = data[ORIGIN_MAP[CODE]].value_counts(sort=False, dropna=True)  # Without NaN
