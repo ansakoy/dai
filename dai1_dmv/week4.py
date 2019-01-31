@@ -73,9 +73,9 @@ def main():
     # c1 = sub2.groupby('NUMCIGMO_EST').size()
     # print(c1)
     #
-    # print('describe nicotine dependence')
-    # desc2 = sub2['TAB12MDX'].describe()
-    # print(desc2)
+    print('describe nicotine dependence')
+    desc2 = sub2['TAB12MDX'].describe()
+    print(desc2)
 
     # c1 = sub2.groupby('TAB12MDX').size()
     # print(c1)
@@ -144,10 +144,10 @@ def main():
     # bivariate bar graph C->Q
     # seaborn.factorplot(x="PACKCATEGORY", y="TAB12MDX", data=sub2, kind="bar", ci=None)
     # factorplot is now renamed -> catplot
-    # seaborn.catplot(x="PACKCATEGORY", y="TAB12MDX", data=sub2, kind="bar", ci=None)
-    # plt.xlabel('Packs per Month')
-    # plt.ylabel('Proportion Nicotine Dependent')
-    # plt.show()
+    seaborn.catplot(x="PACKCATEGORY", y="TAB12MDX", data=sub2, kind="bar", ci=None)
+    plt.xlabel('Packs per Month')
+    plt.ylabel('Proportion Nicotine Dependent')
+    plt.show()
 
     # creating 3 level smokegroup variable
     def SMOKEGRP(row):
@@ -235,23 +235,23 @@ def gapminder_part():
     # plt.show()
 
     # quartile split (use qcut function & ask for 4 groups - gives you quartile split)
-    print('Income per person - 4 categories - quartiles')
-    data['INCOMEGRP4'] = pd.qcut(data.incomeperperson, 4,
-                                     labels=["1=25th%tile", "2=50%tile", "3=75%tile", "4=100%tile"])
-    c10 = data['INCOMEGRP4'].value_counts(sort=False, dropna=True)
-    print(c10)
+    # print('Income per person - 4 categories - quartiles')
+    # data['INCOMEGRP4'] = pd.qcut(data.incomeperperson, 4,
+    #                                  labels=["1=25th%tile", "2=50%tile", "3=75%tile", "4=100%tile"])
+    # c10 = data['INCOMEGRP4'].value_counts(sort=False, dropna=True)
+    # print(c10)
 
     # bivariate bar graph C->Q
-    seaborn.catplot(x='INCOMEGRP4', y='hivrate', data=data, kind="bar", ci=None)
-    plt.xlabel('income group')
-    plt.ylabel('mean HIV rate')
-    plt.show()
-
-    c11 = data.groupby('INCOMEGRP4').size()
-    print(c11)
-
-    result = data.sort(['INCOMEGRP4'], ascending=[1])
-    print(result)
+    # seaborn.catplot(x='INCOMEGRP4', y='hivrate', data=data, kind="bar", ci=None)
+    # plt.xlabel('income group')
+    # plt.ylabel('mean HIV rate')
+    # plt.show()
+    #
+    # c11 = data.groupby('INCOMEGRP4').size()
+    # print(c11)
+    #
+    # result = data.sort(['INCOMEGRP4'], ascending=[1])
+    # print(result)
 
 
 def test_plotting():
@@ -265,8 +265,8 @@ def test_plotting():
 
 if __name__ == '__main__':
     start = time.time()
-    # main()
+    main()
     # test_plotting()
-    gapminder_part()
+    # gapminder_part()
     stop = time.time()
     print('Running time: {}'.format(stop - start))
