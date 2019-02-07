@@ -106,7 +106,7 @@ def main():
     subset_origin = data[condition_origin].copy()
 
     # Add a new column with regions based on origin values
-    subset_origin['REGION'] = subset_origin.apply(lambda row: assign_region(row), axis=1)
+
     # seaborn.countplot(subset_origin['REGION'])
     # plt.xlabel('Regions of Origin')
     # plt.xticks(rotation=20)
