@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da9d7f8-9a3d-4d1d-a982-0915b6d362c5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dai2_dat/assignment2.ipynb" afterPath="$PROJECT_DIR$/dai2_dat/assignment2.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +38,8 @@
       <file leaf-file-name="assignment4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dai1_dmv/assignment4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="139" selection-end-column="16" />
+            <state relative-caret-position="51">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="36" selection-end-column="41" />
               <folding>
                 <element signature="e#186#205#0" expanded="true" />
               </folding>
@@ -50,7 +50,7 @@
       <file leaf-file-name="reference.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dai1_dmv/reference.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
+            <state relative-caret-position="-1280">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
@@ -84,6 +84,9 @@
       <find>si</find>
       <find>replac</find>
       <find>rena</find>
+      <find>region</find>
+      <find>assign_</find>
+      <find>'REGION'</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,7 +110,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="4" />
     <option name="y" value="89" />
     <option name="width" value="1327" />
@@ -305,7 +308,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="89" width="1327" height="665" extended-state="0" />
+    <frame x="4" y="89" width="1327" height="665" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -481,14 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dai1_dmv/reference.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dai1_dmv/global_vars.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -497,10 +492,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dai1_dmv/reference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1280">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dai1_dmv/assignment4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="139" selection-end-column="16" />
+        <state relative-caret-position="51">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="36" selection-end-column="41" />
           <folding>
             <element signature="e#186#205#0" expanded="true" />
           </folding>
