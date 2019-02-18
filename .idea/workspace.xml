@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da9d7f8-9a3d-4d1d-a982-0915b6d362c5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/dai2_dat/assignment2.ipynb" afterPath="$PROJECT_DIR$/dai2_dat/assignment2.ipynb" />
+      <change beforePath="$PROJECT_DIR$/dai2_dat/assignment3.ipynb" afterPath="$PROJECT_DIR$/dai2_dat/assignment3.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="4" />
     <option name="y" value="89" />
     <option name="width" value="1327" />
@@ -277,7 +277,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="89" width="1327" height="665" extended-state="0" />
+    <frame x="4" y="89" width="1327" height="665" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
